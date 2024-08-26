@@ -41,3 +41,38 @@ body {
     color: #181818; /* Text color swap on hover */
   }
   
+
+
+  .styled-table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 18px;
+    text-align: left;
+  }
+  
+  .styled-table thead tr {
+    background-color: #333333;
+    color: #f0f0f0;
+  }
+  
+  .styled-table th, .styled-table td {
+    padding: 12px 15px;
+  }
+  
+  .styled-table tbody tr {
+    border-bottom: 1px solid #444444;
+  }
+  
+  .styled-table tbody tr:nth-of-type(even) {
+    background-color: #222222;
+  }
+  
+  .styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #666666;
+  }
+  
+  .styled-table tbody tr:hover {
+    background-color: #555555;
+  }
+  
