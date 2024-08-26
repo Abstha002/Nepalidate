@@ -1,27 +1,34 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: auto; /* Allow scrolling if content overflows */
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #181818; /* Slightly lighter background for better contrast */
     color: #e0e0e0; /* Softer text color for better readability */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start; /* Adjust to start alignment for vertical scrolling */
     align-items: center;
-    height: 100vh;
-    margin: 0;
+    height: auto; /* Allow body height to adjust based on content */
     padding: 20px;
     transition: background-color 0.3s ease-in-out; /* Smooth transition for any background changes */
-  }
-  
-  h1 {
+    box-sizing: border-box; /* Ensure padding and border are included in the width and height calculations */
+}
+
+h1 {
     font-size: 2.5rem; /* Use rem for scalable units */
     margin-bottom: 20px;
     text-align: center;
     color: #ff9800; /* A vibrant color for headings */
-  }
-  
-  #today-bs-date,
-  #today-english-date,
-  #current-bs-datetime {
+}
+
+#today-bs-date,
+#today-english-date,
+#current-bs-datetime {
     font-size: 1.5rem;
     padding: 20px;
     border-radius: 12px;
@@ -32,47 +39,44 @@ body {
     max-width: 600px; /* Restricting width for better readability on large screens */
     text-align: center;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-  }
-  
-  #today-bs-date:hover,
-  #current-bs-datetime:hover,
-  #today-english-date:hover{
+}
+
+#today-bs-date:hover,
+#current-bs-datetime:hover,
+#today-english-date:hover {
     background-color: #ff9800; /* Highlight on hover */
     color: #181818; /* Text color swap on hover */
-  }
-  
+}
 
-
-  .styled-table {
+.styled-table {
     width: 80%;
     border-collapse: collapse;
     margin: 25px 0;
     font-size: 18px;
     text-align: left;
-  }
-  
-  .styled-table thead tr {
+}
+
+.styled-table thead tr {
     background-color: #333333;
     color: #f0f0f0;
-  }
-  
-  .styled-table th, .styled-table td {
+}
+
+.styled-table th, .styled-table td {
     padding: 12px 15px;
-  }
-  
-  .styled-table tbody tr {
+}
+
+.styled-table tbody tr {
     border-bottom: 1px solid #444444;
-  }
-  
-  .styled-table tbody tr:nth-of-type(even) {
+}
+
+.styled-table tbody tr:nth-of-type(even) {
     background-color: #222222;
-  }
-  
-  .styled-table tbody tr:last-of-type {
+}
+
+.styled-table tbody tr:last-of-type {
     border-bottom: 2px solid #666666;
-  }
-  
-  .styled-table tbody tr:hover {
+}
+
+.styled-table tbody tr:hover {
     background-color: #555555;
-  }
-  
+}
