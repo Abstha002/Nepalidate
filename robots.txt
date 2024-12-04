@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://nepalidate.netlify.app/sitemap.xml

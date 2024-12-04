@@ -102,3 +102,17 @@ h1 {
 .styled-table tbody tr:hover {
     background-color: #555555;
 }
+/* Mobile Styles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    section {
+        padding: 5px;
+    }
+}
