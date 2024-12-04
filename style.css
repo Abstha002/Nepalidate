@@ -46,7 +46,9 @@ h1 {
 
 #today-bs-date,
 #today-english-date,
-#current-bs-datetime {
+#current-bs-datetime ,
+#todayenglish-date,
+#designs{
     font-size: 1.5rem;
     padding: 20px;
     border-radius: 12px;
@@ -61,7 +63,9 @@ h1 {
 
 #today-bs-date:hover,
 #current-bs-datetime:hover,
-#today-english-date:hover {
+#today-english-date:hover,
+#designs:hover,
+#todayenglish-date:hover {
     background-color: #ff9800; /* Highlight on hover */
     color: #181818; /* Text color swap on hover */
 }
