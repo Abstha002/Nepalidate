@@ -19,7 +19,7 @@ body {
     box-sizing: border-box; /* Ensure padding and border are included in the width and height calculations */
 }
 
-h1 {
+h1 ,h2{
     font-size: 2.5rem; /* Use rem for scalable units */
     margin-bottom: 20px;
     text-align: center;
