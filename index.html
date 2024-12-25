@@ -95,10 +95,20 @@
   title="fx"
   src="https://wise.com/gb/currency-converter/fx-widget/converter?sourceCurrency=USD&targetCurrency=NPR&amount=1"
   height=490
-  width=340
+  width=100%
   frameBorder="0"
   allowtransparency="true"
 ></iframe>
+  <script>
+    const frames = document.querySelectorAll('iframe');
+    const widgetFrame = frames[frames.length - 1];
+    window.addEventListener('message', message => {
+      if (message.source !== widgetFrame.contentWindow) {
+      return;
+      }
+      widgetFrame.setAttribute('height', message.data.height);
+    });
+  </script>
 </div>
 
 </body>
