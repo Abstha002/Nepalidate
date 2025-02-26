@@ -56,7 +56,8 @@ h1 ,h2{
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); /* Enhanced shadow for depth */
     margin: 10px 0;
     width: 80%;
-    max-width: 600px; /* Restricting width for better readability on large screens */
+    max-width: auto;
+    max-height: auto;/* Restricting width for better readability on large screens */
     text-align: center;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }

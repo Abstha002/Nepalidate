@@ -1,111 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="description" content="Easily view the current Bikram Sambat and English dates. Explore Nepali and Gregorian calendars with NepaliDate.">
-      <meta name="keywords" content="Nepali date, Bikram Sambat, Nepali calendar, English date, current date, date viewer, Gregorian calendar">
-      <meta name="author" content="NepaliDate Team">
-      <meta property="og:title" content="NepaliDate: Current Bikram Sambat and English Date Viewer">
-      <meta property="og:description" content="NepaliDate offers the current Bikram Sambat date and today's English date. Track both Nepali and Gregorian dates effortlessly.">
-      <meta property="og:image" content="https://nepalidate.netlify.app/logo.png"> <!-- Replace with your actual logo/image URL -->
-      <meta property="og:url" content="https://nepalidate.netlify.app/">
-      <link rel="canonical" href="https://nepalidate.netlify.app/">
-      <title>NepaliDate: Current Bikram Sambat</title>
-      <link rel="stylesheet" href="style.css">
-      <link rel="icon" href="Nepali Date Logo.webp" type="image/x-icon">
-      <script src="script.js" defer></script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NepaliDate provides the current Bikram Sambat date and time, today's English date, horoscopes, weather updates, and a date converter. Your go-to resource for Nepali and Gregorian calendar information.">
+    <meta name="keywords" content="Nepali date, Bikram Sambat, Nepali calendar, English date, current date, date viewer, Gregorian calendar, horoscope, weather, currency converter">
+    <meta name="author" content="NepaliDate Team">
+    <meta property="og:title" content="NepaliDate: Bikram Sambat, English Date, Horoscope, Weather, and Currency Converter">
+    <meta property="og:description" content="NepaliDate offers the current Bikram Sambat date, today's English date, horoscopes, weather updates, and a date conversion tool. Track Nepali and Gregorian dates effortlessly.">
+    <meta property="og:image" content="https://nepalidate.netlify.app/logo.png">
+    <meta property="og:url" content="https://nepalidate.netlify.app/">
+    <link rel="canonical" href="https://nepalidate.netlify.app/">
+    <title>NepaliDate: Bikram Sambat, English Date, Horoscope, Weather, and Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="script.js" defer></script>
 
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebPage",
-      "name": "NepaliDate: Current Bikram Sambat and English Date",
-      "description": "NepaliDate provides the current Bikram Sambat date and time along with today's English date. Track both Nepali and Gregorian dates easily.",
+      "name": "NepaliDate: Bikram Sambat, English Date, Horoscope, Weather, and Currency Converter",
+      "description": "NepaliDate provides the current Bikram Sambat date and time, today's English date, horoscopes, weather updates, and a date converter. Your go-to resource for Nepali and Gregorian calendar information.",
       "url": "https://nepalidate.netlify.app/",
       "publisher": {
         "@type": "Organization",
-        "name": "Your Organization Name",
+        "name": "NepaliDate",
         "logo": {
           "@type": "ImageObject",
-          "url": "URL_TO_LOGO"
+          "url": "https://nepalidate.netlify.app/logo.png"
         }
-      },
-      "mainEntity": {
-        "@type": "WebPage",
-        "name": "NepaliDate",
-        "description": "A website for viewing the current Bikram Sambat date and time along with today's English date."
       }
     }
     </script>
-    
 </head>
 <body>
-    <h1>Nepali Date</h1>
+    <h1>NepaliDate: Your Source for Bikram Sambat and English Dates, Horoscopes, Weather, and More</h1>
+    <p style="display:none;">Welcome to NepaliDate, your comprehensive resource for Nepali and English dates, horoscopes, weather updates, and currency conversion tools. Our platform is designed to provide you with up-to-date information and tools that are relevant to the Nepali community and beyond.</p>
+
     <h2>Today's Nepali Date</h2>
+    <p style="display:none;">This section displays the current date according to the Bikram Sambat calendar, which is the official calendar used in Nepal. The Bikram Sambat calendar is a lunisolar calendar that is approximately 56 years and 8 months ahead of the Gregorian calendar.</p>
     <div id="today-bs-date">
-<script type="text/javascript"> <!--
-  var nc_cb_width = 200;
-  var nc_cb_height = 300;
-  var nc_cb_shadow = 'true';
-  var nc_cb_api_id = 81220240124295; //-->
-  </script>
-  <script type="text/javascript" src="https://www.ashesh.com.np/nepali-calendar/widget/cb.js"></script><div id="ncwidgetlink"></div>
-
+        <script type="text/javascript">
+            var nc_cb_width = 200;
+            var nc_cb_height = 300;
+            var nc_cb_shadow = 'true';
+            var nc_cb_api_id = 81220240124295;
+        </script>
+        <script type="text/javascript" src="https://www.ashesh.com.np/nepali-calendar/widget/cb.js"></script>
+        <div id="ncwidgetlink"></div>
     </div>
+
     <h2>Horoscope</h2>
-    <div id="current-bs-datetime"><iframe src="https://www.ashesh.com.np/rashifal/widget.php?header_title=Nepali Rashifal&header_color=f0b03f&api=4201z7o257" frameborder="0" scrolling="yes" marginwidth="0" marginheight="0" style="border:none; overflow:hidden; width:100%; height:365px; border-radius:5px;" allowtransparency="true">
-    </iframe><br><span style="color:gray; font-size:8px; text-align:left"></div>
+    <p style="display:none;">Get your daily horoscope based on Nepali astrology. Find out what the stars have in store for you today with insights tailored to your zodiac sign.</p>
+    <div id="current-bs-datetime">
+        <iframe src="https://www.ashesh.com.np/rashifal/widget.php?header_title=Nepali Rashifal&header_color=f0b03f&api=4201z7o257" frameborder="0" scrolling="yes" marginwidth="0" marginheight="0" style="border:none; overflow:hidden; width:100%; height:365px; border-radius:5px;" allowtransparency="true"></iframe>
+        <br><span style="color:gray; font-size:8px; text-align:left"></span>
+    </div>
+
     <h2>Today's Weather</h2>
-    <div id="todayenglish-date" style="display: flex; flex-direction: column;     justify-content: center; padding: 10px;">
-
-        <div style="padding: 20px;  width: auto; box-sizing: border-box;">
-          <div id="ww_75cab44aa0a8c" v='1.3' loc='id' a='{"t":"horizontal","lang":"en","sl_lpl":1,"ids":["wl11633"],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}'><a href="https://weatherwidget.org/" id="ww_75cab44aa0a8c_u" target="_blank">Weather widget html</a></div><script async src="https://app3.weatherwidget.org/js/?id=ww_75cab44aa0a8c"></script>
-            
+    <p style="display:none;">Stay informed with the latest weather updates for your location. This section provides real-time weather information, helping you plan your day effectively.</p>
+    <div id="todayenglish-date" style="display: flex; flex-direction: column; justify-content: center; padding: 10px;">
+        <div style="padding: 20px; width: auto; box-sizing: border-box;">
+            <div id="ww_75cab44aa0a8c" v='1.3' loc='id' a='{"t":"horizontal","lang":"en","sl_lpl":1,"ids":["wl11633"],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}'><a href="https://weatherwidget.org/" id="ww_75cab44aa0a8c_u" target="_blank">Weather widget html</a></div>
+            <script async src="https://app3.weatherwidget.org/js/?id=ww_75cab44aa0a8c"></script>
         </div>
-        <div style=" padding: 20px; width: auto; box-sizing: border-box;">
-          <div id="ww_8fdfb578c5229" v='1.3' loc='id' a='{"t":"horizontal","lang":"en","sl_lpl":1,"ids":["wl11636"],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}'><a href="https://weatherwidget.org/" id="ww_8fdfb578c5229_u" target="_blank">weatherwidget.org</a></div><script async src="https://app3.weatherwidget.org/js/?id=ww_8fdfb578c5229"></script>
-           
+        <div style="padding: 20px; width: auto; box-sizing: border-box;">
+            <div id="ww_8fdfb578c5229" v='1.3' loc='id' a='{"t":"horizontal","lang":"en","sl_lpl":1,"ids":["wl11636"],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}'><a href="https://weatherwidget.org/" id="ww_8fdfb578c5229_u" target="_blank">weatherwidget.org</a></div>
+            <script async src="https://app3.weatherwidget.org/js/?id=ww_8fdfb578c5229"></script>
         </div>
-
     </div>
-    
-    <h2>Date Convertor</h2>
+
+    <h2>Date Converter</h2>
+    <p style="display:none;">Convert dates between the Bikram Sambat and Gregorian calendars with our easy-to-use date converter tool. Perfect for planning events or understanding historical dates.</p>
     <div id="designs">
-      <iframe src="https://www.ashesh.com.np/linkdate-converter.php?h_color=21ADE2&b_color=CFE4B1&api=4201z4o370" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" style="border:none; overflow:hidden; width:100%; height:186px;" allowtransparency="true"></iframe><br><span style="color:#6D6D6D; font-size:8px; text-align:left">
-      
+        <iframe src="https://www.ashesh.com.np/linkdate-converter.php?h_color=21ADE2&b_color=CFE4B1&api=4201z4o370" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" style="border:none; overflow:hidden; width:100%; height:186px;" allowtransparency="true"></iframe>
+        <br><span style="color:#6D6D6D; font-size:8px; text-align:left"></span>
     </div>
-    
 
-    
-    <h2>Nepali Calender</h2>
-  <div id="designs">
-    <iframe src="https://nepalicalendar.rat32.com/embed.php" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" style="border:none; overflow:hidden; width:100%; height:650px; border-radius:5px;padding:0px;margin:0px;" allowtransparency="true"></iframe>
-</div >
- 
-     
-<h2>Currency Convertor</h2>
-<div id="designs">
-  <iframe
-  title="fx"
-  src="https://wise.com/gb/currency-converter/fx-widget/converter?sourceCurrency=USD&targetCurrency=NPR&amount=1"
-  height=490
-  width=100%
-  frameBorder="0"
-  allowtransparency="true"
-></iframe>
-  <script>
-    const frames = document.querySelectorAll('iframe');
-    const widgetFrame = frames[frames.length - 1];
-    window.addEventListener('message', message => {
-      if (message.source !== widgetFrame.contentWindow) {
-      return;
-      }
-      widgetFrame.setAttribute('height', message.data.height);
-    });
-  </script>
-</div>
+    <h2>Nepali Calendar</h2>
+    <p style="display:none;">Explore the full Nepali calendar with this interactive widget, showing important dates, festivals, and holidays according to the Bikram Sambat system.</p>
+    <div id="designs">
+        <div id="np_widget_wiz1" widget="month"></div>
+        <script async src="https://nepalipatro.com.np/np-widgets/nepalipatro.js" id="wiz1"></script>
+    </div>
 
+    <h2>Currency Converter</h2>
+    <p style="display:none;">Convert currencies easily with our real-time currency converter, powered by Wise. Ideal for travelers, businesses, and anyone dealing with international transactions.</p>
+    <div id="designs">
+        <iframe title="fx" src="https://wise.com/gb/currency-converter/fx-widget/converter?sourceCurrency=USD&targetCurrency=NPR&amount=1" height="490" width="100%" frameborder="0" allowtransparency="true"></iframe>
+        <script>
+            const frames = document.querySelectorAll('iframe');
+            const widgetFrame = frames[frames.length - 1];
+            window.addEventListener('message', message => {
+                if (message.source !== widgetFrame.contentWindow) {
+                    return;
+                }
+                widgetFrame.setAttribute('height', message.data.height);
+            });
+        </script>
+    </div>
 </body>
 </html>
